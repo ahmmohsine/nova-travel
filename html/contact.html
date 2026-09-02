@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Travel – Agence de voyage</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white min-h-screen">
+<header class="w-full bg-slate-900 border-b border-slate-800 py-4 px-8 fixed top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img class="w-5 h-5" src="../assets/logo.svg" alt="Nova Travel Logo"/>
+            <span class="font-bold text-lg">Nova Travel</span>
+        </div>
+        <nav class="flex gap-6">
+            <a href="../index.html" class="text-slate-400 hover:text-white transition">Accueil</a>
+            <a href="voyages.html" class="text-slate-400 hover:text-white transition">Voyages</a>
+            <a href="apropos.html" class="text-slate-400 hover:text-white transition">À propos</a>
+            <a href="contact.html" class="text-blue-400 font-medium">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 pt-28 pb-16">
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <section class="md:col-span-7 space-y-6">
+            <div>
+                <h1 class="text-3xl font-bold text-white mb-2">Contactez-nous</h1>
+                <p class="text-slate-400 text-sm">
+                    Une question, une demande de devis ou une envie d'évasion ? Envoyez-nous un message :
+                </p>
+            </div>
+
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-xs font-medium text-slate-300 mb-1">Nom complet *</label>
+                    <input type="text" id="name" placeholder="Jane Doe"
+                           class="w-full bg-white text-slate-900 placeholder-slate-400 text-sm rounded-lg px-3 py-2.5 outline-none focus:ring-2 focus:ring-blue-500">
+                    <p class="text-[11px] text-slate-500 mt-1">Votre prénom et votre nom.</p>
+                </div>
+                <div>
+                    <label for="email" class="block text-xs font-medium text-slate-300 mb-1">Email *</label>
+                    <input type="email" id="email" placeholder="vous@example.com"
+                           class="w-full bg-white text-slate-900 placeholder-slate-400 text-sm rounded-lg px-3 py-2.5 outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="phone" class="block text-xs font-medium text-slate-300 mb-1">Téléphone</label>
+                    <input type="tel" id="phone" placeholder="+32 4 123 45 67"
+                           class="w-full bg-white text-slate-900 placeholder-slate-400 text-sm rounded-lg px-3 py-2.5 outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="subject" class="block text-xs font-medium text-slate-300 mb-1">Sujet *</label>
+                    <select id="subject"
+                            class="w-full bg-white text-slate-900 text-sm rounded-lg px-3 py-2.5 outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected>Choisissez un sujet...</option>
+                        <option value="devis">Demande de devis</option>
+                        <option value="reservation">Question sur une réservation</option>
+                        <option value="autre">Autre demande</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" class="block text-xs font-medium text-slate-300 mb-1">Message *</label>
+                    <textarea id="message" rows="4" placeholder="Décrivez votre demande..."
+                              class="w-full bg-white text-slate-900 placeholder-slate-400 text-sm rounded-lg px-3 py-2.5 outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+                </div>
+                <fieldset class="border border-slate-700 rounded-lg p-4">
+                    <legend class="text-xs text-slate-300 px-2">Confidentialité</legend>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox"
+                               class="rounded border-slate-700 bg-slate-900 text-blue-600 focus:ring-blue-500">
+                        <span class="text-xs text-slate-300">J'accepte que mes données soient utilisées pour me répondre *</span>
+                    </label>
+                </fieldset>
+                <div class="flex gap-3 pt-2">
+                    <button type="submit"
+                            class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-5 py-2.5 rounded-lg transition">
+                        Envoyer
+                    </button>
+                    <button type="reset"
+                            class="bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold px-5 py-2.5 rounded-lg border border-slate-700 transition">
+                        Effacer
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="md:col-span-5 space-y-6 md:pt-16">
+            <div>
+                <h2 class="text-xl font-bold text-white mb-2">Nos coordonnées</h2>
+                <div class="text-xs text-slate-400 space-y-1">
+                    <p class="font-semibold text-white">Travel Agency</p>
+                    <p>Rue des Voyages 123, 1000 Bruxelles, Belgique</p>
+                    <p><span class="text-slate-300">Tél :</span> <a href="tel:+3225000000" class="text-blue-400 hover:underline">+32 2 500 00 00</a></p>
+                    <p><span class="text-slate-300">Email :</span> <a href="mailto:contact@novatravel.be" class="text-blue-400 hover:underline">contact@novatravel.be</a></p>
+                </div>
+            </div>
+
+            <div class="w-full h-48 bg-slate-900/40 border border-slate-800 rounded-2xl flex justify-center items-center">
+                <span class="text-xs font-semibold text-slate-500">Carte</span>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+<footer class="border-t border-slate-800/80 py-8 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>© 2025 Nova Travel</p>
+        <div class="flex gap-6">
+            <a href="apropos.html" class="hover:text-slate-300 transition">À propos</a>
+            <a href="contact.html" class="hover:text-slate-300 transition">Contact</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

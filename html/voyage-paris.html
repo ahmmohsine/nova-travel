@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Travel – Week-end à Paris</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white min-h-screen">
+<header class="w-full bg-slate-900 border-b border-slate-800 py-4 px-8 fixed top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img class="w-5 h-5" src="../assets/logo.svg" alt="Nova Travel Logo"/>
+            <span class="font-bold text-lg">Nova Travel</span>
+        </div>
+        <nav class="flex gap-6">
+            <a href="../index.html" class="text-slate-400 hover:text-white transition">Accueil</a>
+            <a href="voyages.html" class="text-blue-400 font-medium">Voyages</a>
+            <a href="apropos.html" class="text-slate-400 hover:text-white transition">À propos</a>
+            <a href="contact.html" class="text-slate-400 hover:text-white transition">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 pt-24 pb-16 space-y-6">
+    <nav class="flex items-center gap-2 text-xs text-slate-400">
+        <a href="../index.html" class="hover:text-white">Accueil</a>
+        <span>›</span>
+        <a href="voyages.html" class="hover:text-white">Voyages</a>
+        <span>›</span>
+        <span class="text-white font-medium">Week-end à Paris</span>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+
+        <div class="md:col-span-7 space-y-4">
+            <div class="h-80 md:h-96 rounded-2xl overflow-hidden border border-slate-800">
+                <img src="../assets/paris.jpg" alt="Paris Tour Eiffel" class="w-full h-full object-cover">
+            </div>
+
+            <div class="grid grid-cols-3 gap-3">
+                <div class="h-24 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="../assets/paris.jpg" alt="Paris 1" class="w-full h-full object-cover">
+                </div>
+                <div class="h-24 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="../assets/paris.jpg" alt="Paris 2" class="w-full h-full object-cover">
+                </div>
+                <div class="h-24 rounded-xl overflow-hidden border border-slate-800">
+                    <img src="../assets/paris.jpg" alt="Paris 3" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div class="md:col-span-5 space-y-6">
+
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold text-white mb-2">Week-end à Paris</h1>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    2 nuits • Hôtel 4★ proche Tour Eiffel • Petit-déjeuner inclus • Transfert aéroport en option.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 space-y-1">
+                <div class="flex items-baseline gap-2">
+                    <span class="text-xs text-slate-500 line-through">399€</span>
+                    <span class="text-lg font-bold text-white">299€</span>
+                </div>
+                <p class="text-[11px] text-slate-400">Dates flexibles entre mars et octobre. Prix par personne, base double.</p>
+            </div>
+
+            <div class="space-y-2">
+                <h2 class="text-sm font-bold text-white">Ce qui est inclus</h2>
+                <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                    <li>Vol A/R depuis Bruxelles (classe éco)</li>
+                    <li>2 nuits en chambre double (petit-déjeuner)</li>
+                    <li>Assistance 24/7</li>
+                </ul>
+            </div>
+
+            <div class="space-y-2">
+                <h2 class="text-sm font-bold text-white">Itinéraire suggéré</h2>
+                <ol class="text-xs text-slate-400 space-y-1.5 list-decimal list-inside">
+                    <li><span class="font-medium text-slate-300">Jour 1 :</span> Arrivée, Tour Eiffel & croisière sur la Seine</li>
+                    <li><span class="font-medium text-slate-300">Jour 2 :</span> Musée du Louvre & Montmartre</li>
+                    <li><span class="font-medium text-slate-300">Jour 3 :</span> Shopping sur les Champs-Élysées, départ</li>
+                </ol>
+            </div>
+
+            <div class="flex gap-3 pt-2">
+                <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-5 py-2.5 rounded-xl transition">
+                    Demander un devis
+                </a>
+                <a href="voyages.html" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-semibold px-5 py-2.5 rounded-xl transition">
+                    Voir d'autres destinations
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="border-t border-slate-800/80 py-8 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+        <p>© 2025 Nova Travel — <a href="apropos.html" class="hover:text-slate-300 transition">À propos</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

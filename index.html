@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Travel – Agence de voyage</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-white min-h-screen">
+<header class="w-full bg-slate-900 border-b border-slate-800 py-4 px-8 fixed top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <img class="w-5 h-5" src="assets/logo.svg" alt="Nova Travel Logo"/>
+            <span class="font-bold text-lg">Nova Travel</span>
+        </div>
+        <nav class="flex gap-6">
+            <a href="index.html" class="text-blue-400 font-medium">Accueil</a>
+            <a href="html/voyages.html" class="text-slate-400 hover:text-white transition">Voyages</a>
+            <a href="html/apropos.html" class="text-slate-400 hover:text-white transition">À propos</a>
+            <a href="html/contact.html" class="text-slate-400 hover:text-white transition">Contact</a>
+        </nav>
+
+    </div>
+</header>
+<main class="max-w-6xl mx-auto px-6 pt-28 pb-16 space-y-16">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div class="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-4 leading-tight">
+                    Partez loin, <span class="bg-slate-800 px-2 py-0.5 rounded text-blue-400">dépensez</span> <br>moins
+                </h1>
+                <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                    Découvrez nos offres exclusives vers plus de 100 destinations. Vol + hôtel à prix doux, garanties flexibles et assistance 24/7.
+                </p>
+                <div class="flex flex-wrap gap-2.5 mb-6">
+                    <a href="html/voyages.html" class="inline-block bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2.5 rounded-xl transition">
+                        Voir les voyages
+                    </a>
+                    <a href="html/voyages.html" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-semibold px-4 py-2.5 rounded-xl transition">
+                        Meilleurs deals
+                    </a>
+                    <span class="inline-block bg-slate-800 text-slate-300 text-xs px-3 py-2.5 rounded-xl border border-slate-700/50">
+                            Annulation flexible
+                        </span>
+                </div>
+            </div>
+            <span class="inline-block text-xs text-slate-400 bg-slate-800/40 border border-slate-700/40 w-fit px-3 py-1 rounded-lg">
+                    Paiement sécurisé
+                </span>
+        </div>
+        <div class="rounded-3xl overflow-hidden border border-slate-800 min-h-[300px]">
+            <img src="assets/hero.png" alt="Coucher de soleil" class="w-full h-full object-cover">
+        </div>
+
+    </section>
+    <section>
+        <div class="mb-6">
+            <h2 class="text-lg font-bold flex items-center gap-2">
+                <span class="text-amber-400">★</span> Meilleurs deals du moment
+            </h2>
+            <p class="text-slate-400 text-xs">Profitez de réductions limitées sur une sélection de voyages populaires.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-3 flex flex-col justify-between">
+                <div>
+                    <div class="h-32 rounded-xl overflow-hidden mb-3">
+                        <img src="assets/paris.jpg" alt="Paris" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-xs text-white">Week-end à Paris</h3>
+                        <div class="flex items-baseline gap-1.5">
+                            <span class="text-[10px] text-slate-500 line-through">399€</span>
+                            <span class="text-xs font-bold text-white">299€</span>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-400 mb-4">2 nuits + petit-déj • Proche Tour Eiffel</p>
+                </div>
+                <a href="html/voyage-paris.html" class="block w-full text-center bg-blue-600/30 hover:bg-blue-600 text-blue-300 hover:text-white text-xs font-medium py-2 rounded-xl border border-blue-500/20 transition">
+                    Voir l'offre
+                </a>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-3 flex flex-col justify-between">
+                <div>
+                    <div class="h-32 rounded-xl overflow-hidden mb-3">
+                        <img src="assets/tokyo.jpg" alt="Tokyo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-xs text-white">Cap sur Tokyo</h3>
+                        <div class="flex items-baseline gap-1.5">
+                            <span class="text-[10px] text-slate-500 line-through">1 599€</span>
+                            <span class="text-xs font-bold text-white">1 199€</span>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-400 mb-4">7 nuits • Shinjuku • Vol A/R</p>
+                </div>
+                <a href="html/voyage-tokyo.html" class="block w-full text-center bg-blue-600/30 hover:bg-blue-600 text-blue-300 hover:text-white text-xs font-medium py-2 rounded-xl border border-blue-500/20 transition">
+                    Voir l'offre
+                </a>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-3 flex flex-col justify-between">
+                <div>
+                    <div class="h-32 rounded-xl overflow-hidden mb-3">
+                        <img src="assets/bali.jpg" alt="Bali" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-xs text-white">Bali détente</h3>
+                        <div class="flex items-baseline gap-1.5">
+                            <span class="text-[10px] text-slate-500 line-through">1 299€</span>
+                            <span class="text-xs font-bold text-white">999€</span>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-400 mb-4">10 jours • Villa & Spa • Petit-déj</p>
+                </div>
+                <a href="html/voyage-bali.html" class="block w-full text-center bg-blue-600/30 hover:bg-blue-600 text-blue-300 hover:text-white text-xs font-medium py-2 rounded-xl border border-blue-500/20 transition">
+                    Voir l'offre
+                </a>
+            </div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-3 flex flex-col justify-between">
+                <div>
+                    <div class="h-32 rounded-xl overflow-hidden mb-3">
+                        <img src="assets/londres.jpg" alt="Londres" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-bold text-xs text-white">City break Londres</h3>
+                        <div class="flex items-baseline gap-1.5">
+                            <span class="text-[10px] text-slate-500 line-through">349€</span>
+                            <span class="text-xs font-bold text-white">279€</span>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-400 mb-4">2 nuits • Westminster • Eurostar</p>
+                </div>
+                <a href="html/voyage-londre.html" class="block w-full text-center bg-blue-600/30 hover:bg-blue-600 text-blue-300 hover:text-white text-xs font-medium py-2 rounded-xl border border-blue-500/20 transition">
+                    Voir l'offre
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+<footer class="border-t border-slate-800/80 py-8 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>© 2025 Nova Travel</p>
+        <div class="flex gap-6">
+            <a href="html/apropos.html" class="hover:text-slate-300 transition">À propos</a>
+            <a href="html/contact.html" class="hover:text-slate-300 transition">Contact</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
